@@ -1,5 +1,7 @@
 # CF8Frontend
 
+Η εφαρμογη τρεχει με την εντολη ng serve απο ενα command prompt terminal στο port 4200 του localhost.  
+
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.8.
 
 ## Development server
