@@ -1,0 +1,47 @@
+
+
+    <table class="table table-bordered w-50">
+  <caption class="caption-top fw-bold bg-primary text-light text-center">
+    Profile Page 
+  </caption>
+  <tr>
+    <td class="fw-semibold text-end">Username</td>
+    <td class="ps-2">{{loggedinuser()?.username}}</td>
+  </tr>
+  <tr>
+    <td class="fw-semibold text-end">Email</td>
+    <td class="ps-2">{{loggedinuser()?.email}}</td>
+  </tr>
+  <tr>
+    <td class="fw-semibold text-end">Roles</td>
+    <td class="ps-2">{{loggedinuser()?.roles}}</td>
+  </tr>
+  <tr>
+    <td class="fw-semibold text-end">Firstname</td>
+    <td class="ps-2">{{user?.firstname}}</td>
+  </tr>
+  <tr>
+    <td class="fw-semibold text-end">Lastname</td>
+    <td class="ps-2">{{user?.lastname}}</td>
+  </tr>
+  <tr>
+    <td class="fw-semibold text-end">Area</td>
+    <td class="ps-2">{{user?.address?.area}}</td>
+  </tr>
+  <tr>
+    <td class="fw-semibold text-end">Street</td>
+    <td class="ps-2">{{user?.address?.street}}</td>
+  </tr>
+  <tr>
+    <td class="fw-semibold text-end">Number</td>
+    <td class="ps-2">{{user?.address?.number}}</td>
+  </tr>
+  <tr>
+    <td class="fw-semibold text-end">Phones</td>
+    @for (p of user?.phone; track p) {
+  <td class="ps-2">
+    {{ p.type }}: {{ p.number }}
+  </td>
+}
+  </tr>
+</table>

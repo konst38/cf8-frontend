@@ -1,0 +1,32 @@
+<table class="table table-bordered table-stripped text-wrap">
+  <thead>
+    <tr class="align-middle text-center small">
+      <th role="button" (click)="sortData('username')">Username {{sortSign('username')}}</th>
+      <th role="button" (click)="sortData('firstname')">First Name {{sortSign('firstname')}}</th>
+      <th role="button" (click)="sortData('lastname')">Last Name {{sortSign('lastname')}}</th>
+      <th role="button" (click)="sortData('email')">Email {{sortSign('email')}}</th>
+      <th role="button" (click)="sortData('address.area')">Area {{sortSign('address.area')}}</th>
+      <th role="button" (click)="sortData('address.street')">Street {{sortSign('address.street')}}</th>
+      <th role="button" (click)="sortData('address.number')">Number {{sortSign('address.number')}}</th>
+      <th >Phones </th>
+      <th >Roles </th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (row of data; track row){
+      <tr class="align-middle" >
+        <td>{{row.username}}</td>
+        <td>{{row.firstname}}</td>
+        <td>{{row.lastname}}</td>
+        <td>{{row.email}}</td>
+        <td>{{row.address?.area}}</td>
+        <td>{{row.address?.street}}</td>
+        <td>{{row.address?.number}}</td>
+        <td class="phones">
+          @for (rp of row.phone; track rp) {
+        <span> {{ rp.type }}: {{ rp.number }}</span> }</td>
+        <td>{{row.roles}}</td>
+      </tr>
+    }
+  </tbody>
+</table>
