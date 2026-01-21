@@ -3,6 +3,7 @@
 Μετα το κατεβασμα τη εφαρμογης ο χρηστης πρεπει να τρεξει την εντολη npm install απο ενα command prompt terminal για να εγκατασταθουν τα dependencies.  
 Η εφαρμογη τρεχει με την εντολη ng serve απο ενα command prompt στο port 4200 του localhost.  
 Η εφαρμογη γινεται build με την εντολη ng build.  
+Μετα το build η javascript τρεχει με την εντολη npx serve dist/CF8-frontend/browser -s -l 5000 στο port 5000 του localhost η σε οποιο port επιθυμει ο χρηστης.  
 Το frontend παρεχει σελιδες για login και signup καθως και σελιδα profile με τα στοιχεια του χρηστη. Στη σελιδα show users εχουν προσβαση μονο οι χρηστες με ρολο Administrator. 
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.8.
