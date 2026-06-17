@@ -1,4 +1,4 @@
-# CF8Frontend
+# CF8-Frontend
 
 Μετα το κατεβασμα τη εφαρμογης ο χρηστης πρεπει να τρεξει την εντολη npm install απο ενα command prompt terminal για να εγκατασταθουν τα dependencies.  
 Η εφαρμογη τρεχει με την εντολη ng serve απο ενα command prompt στο port 4200 του localhost.  
